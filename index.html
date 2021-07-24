@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <!-- jQuery library -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <!-- TweenMax -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> -->
+
+    <!-- Effects js -->
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="js/tilt.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="images/Favicon.png">
+
+    <title>
+        HA140129
+    </title>
+
+    <style>
+        .panel {
+            height: 100vh;
+            background: rgb(187, 73, 73);
+        }
+
+        .line {
+            width: 100%;
+            max-width: 800px;
+            height: 8px;
+            margin: 0 0 10px 0;
+            position: relative;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="intro">
+            <div class="intro-t1">
+                Hi!
+            </div>
+            <div class="intro-t2">
+                I'm Nguyen Tien Quang
+            </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <nav style="z-index: 10; mix-blend-mode: difference;">
+        <a class="hover-this" style="display: inline-block; position: absolute; left: 39px; top: 2.5vw;" href="index.html">
+            <spann> <img src="Logo.svg"> </spann>
+        </a>
+        <div class="hover-this menu-open" style="display: inline-block; position: absolute; right: 39px; top: 2.5vw;" href="index.html">
+            <spann> Contact </spann>
+        </div>
+    </nav>
+
+    <div class="menu-container container-fluid">
+        <!-- <div class="menu-close">close</div> -->
+        <div class="row">
+            <div class="hover-this menu-close" style="display: inline-block; position: absolute; right: 39px; top: 2.5vw;" href="index.html">
+                <spann> close </spann>
+            </div>
+        </div>
+        <div class="row menu">
+            <div class="col-xl-12" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="menu-item">
+                    <a class="menu-link" href="https://www.facebook.com/qblacklightq/" target="_blank"> Facebook </a>
+                    <img class="menu-img" src="images/menu 1.jpg" alt="">
+                    <div class="marquee">
+                        <div class="marquee-inner">
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a class="menu-link" href="https://www.behance.net/ntq1101" target="_blank"> Behance </a>
+                    <img class="menu-img" src="images/menu 2.jpg" alt="">
+                    <div class="marquee">
+                        <div class="marquee-inner">
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a class="menu-link" href="mailto: quangntha140129@fpt.edu.vn" target="_blank"> Email </a>
+                    <img class="menu-img" src="images/menu 3.jpg" alt="">
+                    <div class="marquee">
+                        <div class="marquee-inner">
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a class="menu-link" href="tel: +84 944379096" target="_blank"> Tel </a>
+                    <img class="menu-img" src="images/menu 4.jpg" alt="">
+                    <div class="marquee">
+                        <div class="marquee-inner">
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                            <span>g · Nguyen Tien Quan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div data-scroll-container> -->
+    <div class="smooth-scroll">
+
+        <section class="container-fluid" style="padding-top: 100px;">
+            <div class="row">
+                <div class="col-xl-4"></div>
+                <div class="col-xl-4">
+                    <h1 style="text-align: center;">
+                        Nguyen Tien Quang
+                        <br>
+                        HA140129
+                    </h1>
+                </div>
+                <div class="col-xl-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-xl-1 col-lg-0"></div>
+                <div class="col-xl-10 col-lg-12">
+                    <img src="images/1.png" alt="" style="position: absolute; height: 32.55vw; left: 50%; transform: translateX(-50%) translateZ(1px); margin-top: vw; ">
+                    <div class="tilt" style="margin-top: 8vw; mix-blend-mode: difference; width: 100%;">
+                        <div class="dp" style="text-align: center; display: inline-block;">
+                            <div class="dp">
+                                Course portfolio for WDT401 - Web Design 02
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-1 col-lg-0"></div>
+            </div>
+            <div class="row" style="margin-top: 7vw;">
+                <div class="col-xl-4"></div>
+                <div class="col-xl-4">
+                    <h2 style="text-align: center;">
+                        Lecture
+                        <br>
+                        Shruthi Thaiveppil Gopi
+                    </h2>
+                </div>
+                <div class="col-xl-4"></div>
+            </div>
+        </section>
+
+        <div class="scrollDown"> Scrol<span style="letter-spacing: 0px;">l</span> </div>
+
+        <section class="container-fluid" style="padding-top: 26.04vw;">
+            <div class="row">
+                <div class="col-xl-0"></div>
+                <div class="col-xl-12">
+                    <div class="dp2">
+                        “Before this course, I only knew <span class="outline">C++</span> code. And this’s my <span
+                            class="outline">first exposure</span> to the concepts of <span class="outline">HTML</span>.
+                        At first, these’s seemed quite strange. But, after a period of <span class="outline">hard
+                            study</span>, do the homeworks <span class="outline">seriously</span>, especially publishing
+                        <span class="outline">2</span> of my own websites, now I feel <span class="outline">more
+                            confident</span> with frontend coding.”
+                    </div>
+                </div>
+                <div class="col-xl-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-4"></div>
+                <div class="col-xl-4 col-4">
+                    <div class="trans-img1">
+                        <img src="images/3.png" alt="" style="width: 100%; opacity: 0.7;">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-2"></div>
+            </div>
+        </section>
+
+        <section class="container-fluid" style="padding-top: 10vw;">
+            <div class="row" style="margin-bottom: 10vw;">
+                <div class="col-xl-4"></div>
+                <div class="col-xl-8">
+                    <div class="dp5" data-scroll data-scroll-speed="5" style="position: relative; z-index: 10;">
+                        Timeline projects
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="leftlist">
+                        <h3 data-scroll data-scroll-speed="2">
+                            Day 1
+                            <br>
+                            Basic HTML tags
+                        </h3>
+                        <div class="distop">
+                            <a href="https://quangntha140129.github.io/day1.github.io/" target="_blank" class="tiltImg">
+                                <div class="imgList" style="background-image: url(images/day1.jpg);" data-scroll data-scroll-class="after-scroll">
+                                    <img src="images/day1.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="rightlist" style="margin-top: 15vw;">
+                        <h3 data-scroll data-scroll-speed="2">
+                            Day 2
+                            <br>
+                            Bootstrap 4 basics
+                        </h3>
+                        <div class="distop">
+                            <a href="https://quangntha140129.github.io/day2.github.io/" target="_blank" class="tiltImg">
+                                <div class="imgList" style="background-image: url(images/day2.jpg);" data-scroll data-scroll-class="after-scroll">
+                                    <img src="images/day2.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="leftlist" style="margin-top: 30vw;">
+                        <h3 data-scroll data-scroll-speed="2">
+                            Day 3
+                            <br>
+                            Detailing & Styling
+                        </h3>
+                        <div class="distop">
+                            <a href="https://quangntha140129.github.io/day3.github.io/" target="_blank" class="tiltImg">
+                                <div class="imgList" style="background-image: url(images/day3.jpg);" data-scroll data-scroll-class="after-scroll">
+                                    <img src="images/day3.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-auto"></div>
+                <div class="col-xl-8 col-md-6">
+                    <div class="rightlist" style="margin-top: 10vw;">
+                        <h3 data-scroll data-scroll-speed="2">
+                            Day 4, 5, 6
+                            <br>
+                            Spa - Live website
+                        </h3>
+                        <div class="distop">
+                            <a href="https://quangntha140129.github.io/DavinciSpa.github.io/" target="_blank" class="tiltImg">
+                                <div class="imgList" style="background-image: url(images/day456.jpg);" data-scroll data-scroll-class="after-scroll">
+                                    <img src="images/day456.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="container-fluid" style="margin-top: 15vw; padding-top: 4vw; height: 45vw;">
+            <div class="row">
+                <div class="col-xl-2 col-md-0"></div>
+                <div class="col-xl-8 col-md-12" style="text-align: center;">
+                    <img class="smallImg" src="images/1.png" alt="" style="position: absolute; height: 18vw; left: 50%; transform: translateX(-50%);">
+                    <h4 style="margin-bottom: 3vw; letter-spacing: 0.1vw;">
+                        Say "HI" to m<span style="letter-spacing: 0;">e</span>
+                        <br>
+                        for making our dreams come true<span style="letter-spacing: 0;">!</span>
+                    </h4>
+                    <a class="dp3 outline small-tilt hover-this" style="margin-bottom: 0.5vw;" href="mailto: quangntha140129@fpt.edu.vn">
+                        quangntha140129@fpt.edu.vn
+                    </a>
+                    <a class="dp4 small-tilt hover-this" style="margin-bottom: 25vw;" href="tel: +84 944379096">
+                        +84 944379096
+                    </a>
+                    <h5>
+                        Designed & Developed by NTQ
+                        <br>
+                        All rights reserved 2021
+                    </h5>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scroll Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/scroll-animation.js"></script>
+
+    <!-- Tilt -->
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 20,
+            speed: 1500
+        });
+        VanillaTilt.init(document.querySelectorAll(".tiltImg"), {
+            max: 10,
+            speed: 1500
+        });VanillaTilt.init(document.querySelectorAll(".small-tilt"), {
+            max: 10,
+            speed: 1500
+        });
+    </script>
+
+    <!-- Cursor -->
+    <script src="js/cursor.js"></script>
+
+    <!-- Menu -->
+    <script src="js/menu.js"></script>
+    
+</body>
+
+</html>
